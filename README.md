@@ -42,7 +42,7 @@ detected, max 20% mitochondrial reads).
 1. Split the combined real matrix into RNA and protein `AnnData` objects by feature type.
 2. QC each modality on its own real terms; filter cells on real measured RNA QC distributions.
 3. RNA-only baseline: normalize, log-transform, PCA, Leiden clustering, UMAP — the same method as this
-   portfolio's #4.
+   portfolio's Single-Cell RNA-seq Analysis project.
 4. Fit totalVI on the real RNA (subset to 4,000 highly variable genes) and real protein counts together;
    extract the joint latent representation and denoised protein expression.
 5. Joint clustering and UMAP from the totalVI latent space.
@@ -85,7 +85,8 @@ measurement.
 
 ## 8. Learning through project
 
-A deep generative joint model (totalVI) and a classical RNA-only pipeline (#4's method) can both be run
+A deep generative joint model (totalVI) and a classical RNA-only pipeline (the Single-Cell RNA-seq Analysis
+project's method) can both be run
 correctly and still leave the real, central question open — "did the second modality actually change
 anything" — until it's explicitly checked with a quantitative comparison like the Adjusted Rand Index, rather
 than assumed from the fact that a more sophisticated joint model was used. Separately: when two real
