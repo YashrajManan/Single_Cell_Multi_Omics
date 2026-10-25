@@ -1,0 +1,20 @@
+# Private, git-ignored per this portfolio's convention -- learning files, not published
+WORKFLOW.md
+PROJECT_NARRATIVE.md
+INTERVIEW_QA.md
+INTERPRETATION.md
+Single_Cell_Multiomics_Learning_Compendium.pdf
+single_cell_multiomics_pipeline.png
+
+# Blank/hint teaching scaffold -- the clean, filled-in notebook (once results exist) is what gets pushed
+single_cell_multiomics_blank.ipynb
+
+# The raw real 10x .h5 file -- large and fully regenerable via the real download URL in Step 0,
+# not committed as a convention across this portfolio for regenerable large input data
+data/
+
+# Standard
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
